@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://lgjeyclge2yt"]
+
+[ext_resource type="Texture2D" uid="uid://b58a7em85rom3" path="res://spr_bg.png" id="1_rwrwt"]
+[ext_resource type="Texture2D" uid="uid://ccit8xlb66fm2" path="res://yellowbird-upflap.png" id="2_abjgi"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(143, 260)
+scale = Vector2(1.95833, 2)
+texture = ExtResource("1_rwrwt")
+metadata/_edit_lock_ = true
+
+[node name="Player" type="Node2D" parent="."]
+position = Vector2(140, 259)
+metadata/_edit_group_ = true
+
+[node name="flappy" type="Sprite2D" parent="Player"]
+texture = ExtResource("2_abjgi")
